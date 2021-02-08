@@ -2,9 +2,19 @@ import * as chai from "chai"
 
 const expect = chai.expect
 
-describe("My first test", () => {
+const data = {
+    id: 2,
+    title: "testTitle",
+    album: "tututu",
+    band: "BLACKPINK"
+};
 
-    it("1 is equal to 1", () => {
-        expect(1).to.equal(1)
-    })
-})
+describe("Track unit Test", () => {
+    const band = new Band(...data);
+    expect(band).to.be.instanceOf(Band);
+    expect(band.id).to.be.equal(2);
+    expect(band.title).to.be.equal("testTitle");
+    expect(band.album).to.be.equal("tututu");
+    expect(band.band).to.be.equal("BLACKPINK");
+   
+});
