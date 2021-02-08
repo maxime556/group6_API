@@ -1,5 +1,11 @@
 name: group6_API
-on: [ push ]
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
 jobs:
   test:
     name: Run tests
