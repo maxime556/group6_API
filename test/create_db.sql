@@ -1,1 +1,2 @@
+DROP DATABASE IF EXISTS deploy_test;
 CREATE DATABASE deploy_test;
