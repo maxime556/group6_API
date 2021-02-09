@@ -1,2 +1,4 @@
-node_modules
-src/config/config/local.json
+.env
+
+/node_modules/
+src/config/config.local.json

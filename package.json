@@ -4,8 +4,8 @@
   "description": "semaine de deploiement",
   "main": "index.ts",
   "scripts": {
-    "test": "mocha -r ts-node/register test/**/*.spec.ts  --exit",
-    "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- --env=dev"
+    "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
+    "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- --env=local"
   },
   "repository": {
     "type": "git",
