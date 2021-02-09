@@ -7,7 +7,7 @@ const expect = chai.expect
 const envPath = path.resolve(__dirname + "/../.env.test")
 dotenv.config({ path: envPath })
 
-import { TrackRepository } from "../src/service/repository/track.repository"
+import { TrackRepository } from "../src/repository/track.repository"
 
 describe("Test Track repository", () => {
     

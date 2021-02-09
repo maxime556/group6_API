@@ -1,5 +1,5 @@
-import { DB } from '../index.service'
-import { Track } from '../../model/Track'
+import { DB } from '../service/index.service'
+import { Track } from '../model/Track'
 
 class TrackRepositoryService {
 
@@ -17,4 +17,4 @@ class TrackRepositoryService {
     }
 }
 
-export const    TrackRepository = new TrackRepositoryService()
+export const TrackRepository = new TrackRepositoryService()
