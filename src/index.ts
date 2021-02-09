@@ -2,7 +2,7 @@ import * as dotenv from "dotenv"
 import * as express from "express"
 dotenv.config()
 import { Config, DB } from "./service/index.service"
-import { TrackRepository } from "./service/repository/track.repository"
+import { TrackRepository } from "./repository/track.repository"
 
 const app = express()
 
