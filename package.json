@@ -4,8 +4,10 @@
   "description": "semaine de deploiement",
   "main": "index.ts",
   "scripts": {
-    "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
-    "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- --env=local"
+    "start": "npm run watch",
+    "build": "tsc",
+    "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- --env=local",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts --exit"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mocha": "^8.2.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@types/node": "^14.14.25",
