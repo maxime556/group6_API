@@ -4,7 +4,7 @@ CREATE TABLE `track` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   `album` varchar(255) DEFAULT NULL,
-  `band` int(2) DEFAULT NULL,
+  `band` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
