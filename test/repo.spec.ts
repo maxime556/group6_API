@@ -9,9 +9,9 @@ dotenv.config({ path: envPath })
 
 import { TrackRepository } from "../src/service/repository/track.repository"
 
-describe("Test user repository", () => {
+describe("Test Track repository", () => {
     
-    it("Test if getUser returns correct results", () => {
+    it("Test if getTracks returns correct results", () => {
         
         return TrackRepository.getTracks(3, 0)
             .then((results) => {
