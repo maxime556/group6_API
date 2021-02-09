@@ -36,8 +36,8 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          username: mail.a.la.con.de.test@gmail.com
+          password: mdp.a.la.con.de.test
           subject: Github Actions job result
           # Literal body:
           body: Build job of ${{github.repository}} completed successfully!
