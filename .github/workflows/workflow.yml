@@ -10,10 +10,24 @@ jobs:
   test:
     name: Run tests
     runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: no
+          MYSQL_DATABASE: deploy_test
+          MYSQL_PASSWORD: password
+          MYSQL_USER: marouatnk
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '15'
+      - name: Populate MySQL database
+        run: bash pre-test.sh
+        # $GITHUB_WORKSPACE
       - run: npm install
       - run: npm test
