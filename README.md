@@ -4,7 +4,7 @@
 
 npm install
 
-add a `.env.dist` file outside of the `./src` directory with your DB variables
+add a `.env` file outside of the `./src` directory with your DB variables ( follow the `.env.dist` fila as an example)
 
 ```json
 {
