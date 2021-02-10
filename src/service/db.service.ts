@@ -15,8 +15,9 @@ class DBService {
     //     this.$con.connect()
     // }
     
-    // query(queryString: string): Promise<any>
-    // {
+    query(queryString: string): Promise<any>
+    {
+        return Promise.resolve([])
     //     return new Promise((resolve, reject) => {
     //         this.$con.query(queryString, (error, results, fields) => {
     //             if (error) {
@@ -26,7 +27,7 @@ class DBService {
     //             }
     //         })
     //     })
-    // }
+    }
 }
 
 export const DB = new DBService()
