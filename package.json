@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "npm run watch",
-    "build": "tsc",
+    "build": "bash pre-build.sh && tsc",
     "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- --env=local",
     "test": "mocha -r ts-node/register test/**/*.spec.ts --exit"
   },

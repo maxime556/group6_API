@@ -13,13 +13,14 @@ app.get('/', (req: any, res: any) => {
 app.get('/tracks', (req: any, res: any) => {
   const limit = req.query.limit
   
-  TrackRepository.getTracks(limit)
-      .then((users: any) => {
-          res.send(users)
-      }).catch(e => {
-          // logs?
-          res.send(500, { error: e.toString() })
-      })
+  res.send([])
+//   TrackRepository.getTracks(limit)
+//       .then((tracks: any) => {
+//           res.send(tracks)
+//       }).catch(e => {
+//           // logs?
+//           res.send(500, { error: e.toString() })
+//       })
 })
 
 app.listen(process.env.PORT, () => {
