@@ -17,4 +17,4 @@ jobs:
         # password: ${{ secrets.SSH_PASSWORD }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        script: echo 'Hello World'
+        script: echo 'Coucou La team Simplon Prod :D'
